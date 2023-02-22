@@ -1,0 +1,32 @@
+.button__add{
+    position: relative;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color:#ffffff;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #D58C51;;    
+    width: 30px;
+    height: 30px;
+    font-weight: 700;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.button__add::before,
+.button__add::after{
+    content:"";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 11px;
+    height: 2px;
+    background-color: #ffffff;
+    border-bottom: 2px;
+}
+
+.button__add::after{
+    transform: translate(-50%, -50%) rotate(-90deg);
+}
