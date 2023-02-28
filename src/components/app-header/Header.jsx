@@ -1,19 +1,25 @@
 
+import {Link} from 'react-router-dom'
+
 import './Header.css'
+
+
 
 function Header(){
     return (
-        <header className="container header">
-                <h1 className='header__title'>Наша продукция</h1>
-                <div>
-                    <p className='header__total'>
-                        <span>3</span> товара<br></br>
-                        на сумму <span>3 500</span> ₽
-                    </p>
+        <header className="container">
+                <div class="header">
+                    <h1 className='header__title'>Наша продукция</h1>
+                    <div>
+                        <p className='header__total'>
+                            <span>3</span> товара<br></br>
+                            на сумму <span>3 500</span> ₽
+                        </p>
 
-                    <span className='header__basket'>
-                    <img src="./images/ui/icon-basket.svg" alt="Корзина" />
-                    </span>
+                        <Link to="/basket" className='header__basket'>
+                        <img srcSet="./images/ui/icon-basket.svg" alt="Корзина" />
+                        </Link>
+                    </div>
                 </div>
         </header>
     )
