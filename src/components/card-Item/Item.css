@@ -2,7 +2,6 @@
 
 .product__image{
     grid-area: image;
-    text-align: center;
 }
 
 .product__title{
@@ -52,9 +51,6 @@
     border-radius: 50%;
     line-height: 0;
     cursor:pointer;
-    background-image: url('../../../public/images/ui/icon-add.svg');
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .products__item:hover .product__btn-add{

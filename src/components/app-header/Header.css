@@ -39,15 +39,3 @@
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
-@media (max-width: 592px){
-    .header{
-        justify-content: center;
-    }
-
-    .header__title{
-        margin-bottom: 20px;
-        width: 100%;
-        text-align: center;
-    }
-}

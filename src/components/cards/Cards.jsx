@@ -5,8 +5,7 @@ import './Cards.css'
 
 function Cards(){
     return (
-        <div className="container">
-        <main className="products__list">
+        <main className="container products products__list">
         {products.map((item) => (
             <section key={item.id} className="products__item">
                 <Item 
@@ -20,7 +19,6 @@ function Cards(){
         ))}
 
         </main>
-        </div>
     )
 
 }
