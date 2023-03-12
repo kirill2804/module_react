@@ -2,6 +2,7 @@
 
 .product__image{
     grid-area: image;
+    text-align: center;
 }
 
 .product__title{
@@ -38,7 +39,8 @@
     line-height: 17px;
 }
 
-.product__btn-add{
+.product__btn-add,
+.product__btn-remove{
     grid-area: botton;
     display: inline-block;
     background-color: transparent;
@@ -51,9 +53,18 @@
     border-radius: 50%;
     line-height: 0;
     cursor:pointer;
+    background-image: url('../../../public/images/ui/icon-add.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.product__btn-add:disabled{
+    opacity: .2;
 }
 
 .products__item:hover .product__btn-add{
     background-color: #D58C51;
     border-color: #D58C51;;
 }
+
